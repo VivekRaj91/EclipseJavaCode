@@ -1,0 +1,9 @@
+ALTER DATABASE webus2_old -- old Database Name
+SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+GO
+ALTER DATABASE webus2_old --old Database Name
+MODIFY NAME = webus2 --New Name
+GO
+ALTER DATABASE webus2 -- New Name
+SET MULTI_USER
+GO
